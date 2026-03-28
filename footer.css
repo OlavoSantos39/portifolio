@@ -1,0 +1,73 @@
+footer {
+  background-color: #1a1a1a;
+  color: gold;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  section#sobre {
+    padding: 30px 15px;
+  }
+
+  section#projetos .projetos-container {
+    grid-template-columns: 1fr;
+  }
+
+  section#contatos .form-contato {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .btn-contato {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+  section#sobre h2,
+  section#projetos h2,
+  section#contatos h2 {
+    font-size: 1.5em;
+  }
+
+  section#sobre .foto-perfil {
+    width: 140px;
+    height: 140px;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+}

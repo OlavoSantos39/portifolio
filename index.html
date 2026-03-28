@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olavo Santos</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+  <header>
+    <h1>Olavo Santos</h1>
+    <nav>
+      <ul>
+        <button class="click">
+          <li><a href="#sobre">Sobre</a></li>
+        </button>
+        <button class="click">
+          <li><a href="#projetos">Projetos</a></li>
+        </button>
+        <button class="click">
+          <li><a href="#contatos">Contato</a></li>
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <img src="img/WhatsApp Image 2026-03-28 at 12.54.04.jpeg" alt="Foto de Olavo Santos" class="foto-perfil">
+      <p>
+        Olá! Meu nome é Olavo Santos, sou desenvolvedor web apaixonado por criar experiências digitais modernas e
+        funcionais.
+        Tenho experiência em HTML, CSS, JavaScript e frameworks modernos, sempre buscando unir design e tecnologia.
+      </p>
+    </section>
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+
+      <div class="projetos-container">
+        <article class="projeto">
+          <h3>Site delivery</h3>
+          <p>Um site responsivo desenvolvido em HTML, CSS e JavaScript para apresentar meus trabalhos e habilidades.</p>
+          <a href="https://github.com/OlavoSantos39/delivery" target="_blank">Ver no GitHub</a>
+        </article>
+
+        <article class="projeto">
+          <h3>Vendas de carros usados</h3>
+          <p>Aplicação web para gerenciamento de tarefas, com funcionalidades de adicionar, editar e excluir itens.</p>
+          <a href="https://github.com/OlavoSantos39/carros" target="_blank">Ver no GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatos">
+      <h2>Contato</h2>
+      <form action="#" method="post" class="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="6"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>2026 - Desenvolvido por Olavo Santos</p>
+  </footer>
+</body>
+
+</html>

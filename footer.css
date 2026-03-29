@@ -72,3 +72,49 @@ footer p {
     font-size: 0.75em;
   }
 }
+
+/* Ajustes para telas muito pequenas (smartwatch ~200px-300px) */
+@media screen and (max-width: 320px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .form {
+        width: 90%;
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 10px;
+        height: 10px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .links {
+        font-size: 12px;
+    }
+}

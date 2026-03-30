@@ -32,8 +32,8 @@ header {
 .title {
   font-size: 1.8em;
   position: relative;
-  animation: moverParaDireita 5s linear infinite;
-  animation-direction: alternate;
+  animation: moverParaDireita 8s linear infinite;
+  animation-direction: normal;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +116,14 @@ nav ul li a {
     font-size: 0.8em;
     padding: 10px;
   }
+
+  .title {
+    font-size: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: anima 0.9s ease-in-out infinite alternate;
+  }
 }
 
 @media (max-width: 480px) {
@@ -155,16 +163,17 @@ nav ul li a {
   }
 
   .container {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 20px;
     padding: 10px;
   }
 
   .form {
-    width: 90%;
-    margin-top: 100px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 
   .logo {
@@ -173,8 +182,20 @@ nav ul li a {
     margin-top: 10px;
   }
 
+  .title {
+    font-size: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: anima 0.9s ease-in-out infinite alternate;
+  }
+
   h2 {
     font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
   }
 
   input {
@@ -190,4 +211,9 @@ nav ul li a {
   .links {
     font-size: 12px;
   }
+
+img {
+  max-width: 100%;
+  height: auto;}
+
 }

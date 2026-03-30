@@ -8,6 +8,17 @@
   }
 }
 
+@keyframes moverParaDireita {
+  from {
+    right: 0;
+  }
+
+  to {
+    left: 0;
+  }
+
+}
+
 header {
   background-color: #A7C7E7;
   color: white;
@@ -16,6 +27,24 @@ header {
   align-items: center;
   padding: 15px 40px;
   border-radius: 20px;
+}
+
+.title {
+  font-size: 1.8em;
+  position: relative;
+  animation: moverParaDireita 5s linear infinite;
+  animation-direction: alternate;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle {
+  animation-name: anima;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .click {
@@ -36,6 +65,7 @@ header {
 }
 
 header h1 {
+  text-align: center;
   font-size: 1.8em;
   color: rgb(5, 5, 5);
   font-style: italic;
@@ -118,46 +148,46 @@ nav ul li a {
 
 /* Ajustes para telas muito pequenas (smartwatch ~200px-300px) */
 @media screen and (max-width: 320px) {
-    body {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
 
-    .container {
-        width: 80%;
-        height: auto;
-        border-radius: 20px;
-        padding: 10px;
-    }
+  .container {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+  }
 
-    .form {
-        width: 90%;
-        margin-top: 100px;
-        padding: 10px;
-    }
+  .form {
+    width: 90%;
+    margin-top: 100px;
+    padding: 10px;
+  }
 
-    .logo {
-        width: 10px;
-        height: 10px;
-        margin-top: 10px;
-    }
+  .logo {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+  }
 
-    h2 {
-        font-size: 14px;
-    }
+  h2 {
+    font-size: 14px;
+  }
 
-    input {
-        padding: 6px;
-        font-size: 12px;
-    }
+  input {
+    padding: 6px;
+    font-size: 12px;
+  }
 
-    button {
-        padding: 8px;
-        font-size: 12px;
-    }
+  button {
+    padding: 8px;
+    font-size: 12px;
+  }
 
-    .links {
-        font-size: 12px;
-    }
+  .links {
+    font-size: 12px;
+  }
 }
